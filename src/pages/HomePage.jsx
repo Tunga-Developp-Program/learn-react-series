@@ -17,7 +17,7 @@ const HomePage = () => {
 
       <section className="row  blog-section container">
         {blogs.map((item, index) => {
-          return <BlogSection key={index} title={item.title} subject={item.subject} image={item.image} />;
+          return <BlogSection key={index} title={item.title} subject={item.subject} image={item.imgURL} />;
         })}
       </section>
     </>

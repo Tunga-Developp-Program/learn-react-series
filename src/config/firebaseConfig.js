@@ -1,4 +1,5 @@
 import firebase from "firebase";
+import "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDz-5GVhPra028Wk5bjchOOnepTbJWDMI0",
@@ -26,5 +27,9 @@ export const uiConfig = {
     firebase.auth.EmailAuthProvider.PROVIDER_ID,
   ],
 };
+
+// export the db(firestore)
+
+export const db = firebase.firestore()
 
 export default firebase;
