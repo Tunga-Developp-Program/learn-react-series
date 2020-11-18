@@ -4,8 +4,12 @@ import { Route, Redirect } from "react-router-dom";
 
 import { AuthContext } from "../store/AuthContext";
 
+
+
+
 const ProtectedRoute = ({
   component: OurComponent /* component prop param */,
+ 
   ...rest
 }) => {
   //our component
