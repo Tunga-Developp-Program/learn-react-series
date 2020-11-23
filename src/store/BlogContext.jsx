@@ -53,6 +53,7 @@ const BlogContextProvider = (props) => {
       dispatch({ type: "GET_BLOGS", payload: ourblogs });
     });
   }, []);
+  
   return (
     <BlogContext.Provider value={{ blogs: blogs, dispatch: dispatch }}>
       {props.children}
